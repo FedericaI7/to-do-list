@@ -42,7 +42,9 @@ function App() {
         {/* The list */}
         <div className="list">
           {arr.map((x) => (
-            <div className="list-item">{x.name}</div>
+            <div className="list-item">
+              {x.name} <i class="bi bi-x-circle"></i>
+            </div>
           ))}
         </div>
       </div>

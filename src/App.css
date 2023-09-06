@@ -3,39 +3,51 @@
 }
 
 .input-btn--container {
-  padding-top: 40px;
+  padding-top: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .input-btn--container input {
-  width: 300px;
-  height: 40px;
-  border-radius: 5px;
+  width: 18.75rem;
+  height: 2.5rem;
+  border-radius: 0.3125rem;
   border: 2px solid gray;
-  font-size: 18px;
+  font-size: 1.5625rem;
 }
 
 .input-btn--container button {
-  height: 40px;
-  width: 60px;
+  height: 2.5rem;
+  width: 3.75rem;
   background-color: rgba(212, 4, 130);
   border: none;
   color: white;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   cursor: pointer;
 }
 
-.list-item {
+.list {
   padding-top: 3.125rem;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  gap: 0.625rem;
   align-items: center;
-  font-size: 18px;
+  justify-content: flex-start;
+}
+
+.list-item {
   font-weight: 500;
+  font-size: 1.75rem;
+  display: flex;
+  gap: 0.625rem;
+  color: blueviolet;
+}
+
+.bi {
+  cursor: pointer;
+  color: blueviolet;
 }
