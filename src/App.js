@@ -25,6 +25,11 @@ function App() {
     setInputValue("");
   };
 
+  //delete btn
+  const deleteBtn = (id) => {
+    setArr(arr.filter((item) => item.id !== id));
+  };
+
   return (
     <>
       <Header />
@@ -43,7 +48,8 @@ function App() {
         <div className="list">
           {arr.map((x) => (
             <div className="list-item">
-              {x.name} <i class="bi bi-x-circle"></i>
+              {x.name}{" "}
+              <i class="bi bi-x-circle" onClick={() => deleteBtn(x.id)}></i>
             </div>
           ))}
         </div>
