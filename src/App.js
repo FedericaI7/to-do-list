@@ -10,7 +10,7 @@ function App() {
       <Header />
       <div className="app--container">
         <input value={inputValue} type="text" placeholder="" />
-        <button>Add</button>
+        <button>+</button>
       </div>
     </>
   );
