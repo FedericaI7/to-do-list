@@ -20,7 +20,7 @@ function App() {
       name: inputValue,
     };
     // Add the new object to the array
-    setArr([...arr, setArr]);
+    setArr([...arr, newObj]);
     // Reset the input
     setInputValue("");
   };
@@ -29,13 +29,22 @@ function App() {
     <>
       <Header />
       <div className="app--container">
-        <input
-          value={inputValue}
-          onChange={changeInput}
-          type="text"
-          placeholder=""
-        />
-        <button onClick={clickButton}>+</button>
+        <div className="input-btn--container">
+          <input
+            value={inputValue}
+            onChange={changeInput}
+            type="text"
+            placeholder=""
+          />
+          <button onClick={clickButton}>+</button>
+        </div>
+
+        {/* The list */}
+        <div className="list">
+          {arr.map((x) => (
+            <div className="list-item">{x.name}</div>
+          ))}
+        </div>
       </div>
     </>
   );
