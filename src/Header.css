@@ -1,0 +1,10 @@
+.header--container {
+  height: 9.375rem;
+  background: rgb(146, 9, 238);
+  background: linear-gradient(
+    106deg,
+    rgba(146, 9, 238, 1) 0%,
+    rgba(212, 4, 130, 1) 51%,
+    rgba(176, 54, 219, 1) 100%
+  );
+}
