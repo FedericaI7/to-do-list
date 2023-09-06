@@ -47,8 +47,8 @@ function App() {
         {/* The list */}
         <div className="list">
           {arr.map((x) => (
-            <div className="list-item">
-              {x.name}{" "}
+            <div className="list-item" key={x.id}>
+              {x.name}
               <i class="bi bi-x-circle" onClick={() => deleteBtn(x.id)}></i>
             </div>
           ))}

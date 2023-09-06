@@ -52,3 +52,9 @@
   cursor: pointer;
   color: blueviolet;
 }
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  .input-btn--container input {
+    width: 260px;
+  }
+}
